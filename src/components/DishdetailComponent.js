@@ -1,11 +1,10 @@
 import React from 'react';
-import {
-    Card, CardImg, CardBody,
-    CardTitle, CardImgOverlay
-} from 'reactstrap';
+import { Card, CardImg, CardBody,
+    CardTitle, CardImgOverlay } from 'reactstrap';
 
 
-function RenderDish({ dish }) {
+
+    function RenderDish({dish}) {
 
 
     if (dish != null)
@@ -27,7 +26,7 @@ function RenderDish({ dish }) {
 
 }
 
-function RenderComments({ comments }) {
+function RenderComments({comments})  {
 
     if (comments != null) {
         const comment = comments.map((comment) => {
@@ -62,7 +61,7 @@ function RenderComments({ comments }) {
     }
 }
 
-const DishDetail = (props) => {
+const  DishDetail = (props) => {
     const dish = props.dish;
     console.log(dish);
 
