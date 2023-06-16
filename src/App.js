@@ -1,8 +1,10 @@
 
 import './App.css';
+import Menu from './components/MenuComponent';
 
 import { Navbar, NavbarBrand } from 'reactstrap';
-import Component from 'react'
+import { Component } from 'react';
+
 class App extends Component {
   render() {
     return (
@@ -12,6 +14,7 @@ class App extends Component {
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
           </div>
         </Navbar>
+        <Menu />
       </div>
     );
   }
