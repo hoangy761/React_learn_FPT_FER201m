@@ -1,5 +1,5 @@
 import React from 'react';
-    import { Card, CardImg, CardText, CardBody,CardImgOverlay,
+    import { Card, CardImg, CardBody,CardImgOverlay,
         CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
     import { Link } from 'react-router-dom';
     
@@ -69,8 +69,6 @@ const  DishDetail = (props) => {
         return (<div></div>);
     }
 
-    const dishItem = RenderDish(dish);
-    const commentItem = RenderComments(dish.comments);
     return (
         <div className="container">
         <div className="row">
