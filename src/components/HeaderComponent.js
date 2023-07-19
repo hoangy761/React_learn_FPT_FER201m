@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import {
-    Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
+    Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem,
     Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, Label
 } from 'reactstrap';
@@ -44,7 +44,7 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <Navbar dark expand="md">
+                <Navbar dark expand="md"  style={{backgroundColor: '#512da8'}}>
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/"><img src='assets/images/logo.png' height="30" width="41" alt='Ristorante Con Fusion' /></NavbarBrand>
@@ -63,7 +63,7 @@ class Header extends Component {
                                     <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
                                 </NavItem>
                             </Nav>
-                            <Nav className="ml-auto" navbar>
+                            <Nav className=" float-sm-left" navbar>
                                 <NavItem>
                                     <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
                                 </NavItem>
