@@ -14,6 +14,7 @@ function RenderMenuItem({ dish, onClick }) {
                 <CardImgOverlay>
                     <CardTitle>{dish.name} .</CardTitle>
                     <CardTitle>{dish.name} .</CardTitle>
+                    <CardTitle>{dish.name} .</CardTitle>
                 </CardImgOverlay>
             </Link>
         </Card>
